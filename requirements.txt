@@ -1,0 +1,7 @@
+Flask>=2.2.5 # Base web framework, ensure version is compatible with Flask-SQLAlchemy
+Flask-SQLAlchemy>=3.1.1 # ORM for database interaction
+PyMySQL>=1.1.1 # MySQL driver
+SQLAlchemy>=2.0.16 # Core ORM library used by Flask-SQLAlchemy
+# Other dependencies like click, itsdangerous, Jinja2, Werkzeug, etc.,
+# are typically installed as dependencies of Flask and SQLAlchemy.
+# Listing direct dependencies is usually sufficient.
