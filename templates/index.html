@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation Data Sender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Geolocation Data Sender</h1>
+
+        <div id="geolocation-info">
+            <h2>Your Location:</h2>
+            <p>Latitude: <span id="latitude">N/A</span></p>
+            <p>Longitude: <span id="longitude">N/A</span></p>
+        </div>
+
+        <form id="data-form">
+            <h2>Enter Data:</h2>
+            <div>
+                <label for="field1">Field 1:</label>
+                <input type="text" id="field1" name="field1" required>
+            </div>
+            <div>
+                <label for="field2">Field 2:</label>
+                <input type="text" id="field2" name="field2" required>
+            </div>
+            <div>
+                <label for="field3">Field 3:</label>
+                <input type="text" id="field3" name="field3" required>
+            </div>
+            <button type="submit">Get Location & Send Data</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
